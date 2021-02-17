@@ -1,6 +1,8 @@
-import java.util.Scanner;
 
 public class fibnacci{
+static int n;
+int a[]=new int[n];
+
 static int fib(int n)
 {
 if(n==1||n==2)
@@ -12,8 +14,8 @@ return(fib(n-1)+fib(n-2));
 }
 }
     public  static void main(String ar[]) {
-
-        System.out.println(fib(10));
+n=10;
+        System.out.println(fib(n));
         
     }
 }
