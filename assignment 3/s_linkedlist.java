@@ -33,7 +33,7 @@ void printLinkedList(node head)
 {
     while(head!=null)
     {
-        System.out.println(head.data+" ");
+        System.out.print(head.data+" ");
         head=head.next;
     }
 }
@@ -54,12 +54,28 @@ node reverse(node head)
             prev=curr;
             curr=next;
         }
-
-
-    
-    return prev;
+return prev;
 }
+int size(node head)
+{
+    if(head==null)
+    {
+        return 0;
 
+    }
+    if(head.next==null)
+    {
+        return 1;
+    }
+    int count=0;
+    node curr=head;
+    while(curr!=null)
+    {
+        count=count+1;
+curr=curr.next;
+    }
+    return count;
+}
 
 }
 class s_linkedlist
@@ -70,8 +86,10 @@ class s_linkedlist
        l.head= l.insert(1);
         l.head=l.insert(2);
         l.head=l.insert(3);
+        System.out.print("size of linked list :"); 
+        System.out.println(l.size(l.head));
        l.printLinkedList(l.head);
-       System.out.println("******************");
+       System.out.println("reverse of linked list");
        l.head=l.reverse(l.head);
        l.printLinkedList(l.head);
     }
