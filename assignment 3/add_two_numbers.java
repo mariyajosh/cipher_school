@@ -44,6 +44,7 @@ class add_two_numbers{
         l2.add(3);
 perform p=new perform();
 LinkedList<Integer> j=p.addition(l,l2);
+System.out.print("addition is: ");
 for(int i=j.size()-1;i>=0;i--)
 {
     System.out.print(j.get(i));
