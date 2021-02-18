@@ -9,9 +9,15 @@ class pnode{
         next=null;
     }
 }
+
 class pLinkedList{
     pnode head;
     pnode mid;
+
+
+
+
+
 pnode insert(int x)
 {
     pnode n=new pnode(x);
@@ -19,7 +25,6 @@ pnode insert(int x)
    {
        head=n;
    }
-   
    else{
        pnode curr=head;
        while(curr.next!=null)
@@ -27,38 +32,11 @@ pnode insert(int x)
            curr=curr.next;
        }
        curr.next=n;
-
    }
    return head;
 }
-void printLinkedList(pnode head)
-{
-    while(head!=null)
-    {
-        System.out.println(head.data+" ");
-        head=head.next;
-    }
-}
-int size(pnode head)
-{
-    if(head==null)
-    {
-        return 0;
 
-    }
-    if(head.next==null)
-    {
-        return 1;
-    }
-    int count=0;
-    pnode curr=head;
-    while(curr!=null)
-    {
-        count=count+1;
-curr=curr.next;
-    }
-    return count;
-}
+
 
 
 
