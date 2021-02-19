@@ -79,6 +79,7 @@ return even_s;
 }
 void printLinkedList(snode head)
 {
+    System.out.println("segregted list");
     while(head!=null)
     {
         System.out.print(head.data+" ");
