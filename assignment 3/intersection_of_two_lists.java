@@ -21,7 +21,7 @@ public class intersection_of_two_lists {
         {
             if(l1.get(i)>l2.get(j))
             {
-                l3.add(l2.get(j));
+                
                 j++;
             }
             else if(l1.get(i)==l2.get(j))
@@ -32,20 +32,11 @@ public class intersection_of_two_lists {
             }
             else if(l1.get(i)<l2.get(j))
             {
-                l3.add(l1.get(j));
+               
                 i++;
             }
         }
-        while(i<l1.size())
-        {
-            l3.add(l1.get(i));
-            i++;
-        }
-        while(j<l2.size())
-        {
-            l3.add(l2.get(j));
-            j++;
-        }
+        
         return l3;
     }
     public static void main(String arg[])
